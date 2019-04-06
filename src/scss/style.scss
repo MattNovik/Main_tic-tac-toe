@@ -1,0 +1,131 @@
+body {
+  width:100vw;
+  height:100vh;
+  background-color:lightgreen;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+.count {
+   min-width:200px;
+   width:200px;
+   min-height:100px;
+   height:100px;
+   border:solid 4px black;
+   margin:20px 0 20px 0;
+   display:flex;
+   flex-direction:column;
+}
+.first,
+.second {
+   flex-grow:1;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.name {
+   margin:0;
+   padding:0;
+   width:50%;
+   display:flex;
+   justify-content:center;
+}
+.count_rect,
+.count_circle {
+  margin:0 10px 0 0;
+  padding:0;
+  width:50%;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:white;
+}
+.for_btn {
+   margin:0 0 15px 0;
+   padding:0;
+   width:20%;
+   min-width:280px;
+   min-height:50px;
+   display:flex;
+   justify-content:space-around;
+   align-items:center;
+}
+.btn {
+   min-width:100px;
+   width:120px;
+   min-height:30px;
+   height:30px;
+   border:solid 2px gray;
+   outline:none;
+   cursor:pointer;
+}
+
+.table {
+   width:350px;
+   margin:auto;
+   height:300px;
+   display:grid;
+   grid-template-rows:1fr 1fr 1fr;
+   grid-template-columns:1fr 1fr 1fr;
+}
+.tab{
+   position:relative;
+}
+.one {
+  border-right:solid 3px black;
+  border-bottom: solid 3px black;
+}
+.three {
+  border-left:solid 3px black;
+  border-bottom: solid 3px black;
+}
+.seven {
+  border-right:solid 3px black;
+  border-top: solid 3px black;
+}
+
+.nine {
+  border-left:solid 3px black;
+  border-top: solid 3px black;
+}
+.close{
+  position: absolute; top: calc(50% - 40px); left: calc(50% - 40px);
+  width: 85px;
+  height: 85px;
+}
+.close:before,
+.close:after{
+  content: '';
+  position: absolute; top: 0;
+  width: 2px;
+  height: 100%;
+}
+.close:before{
+  left: calc(50% - 3px);  
+  border-left: 3px solid red;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.close:after{
+  right: calc(50% - 3px); 
+  border-right: 3px solid red;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close:hover:before,
+.close:hover:after{
+  border-color: #f00;
+}
+.round {
+   width:75px;
+   height:75px;
+   border:solid 3px red;
+   border-radius:50%;
+   position:absolute;
+   top:calc(50% - 36px);
+   left:calc(50% - 36px);
+}
