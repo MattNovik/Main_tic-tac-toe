@@ -37,7 +37,7 @@ refresh.onclick =  function() {
   
 table.onclick = function(event) {
    if (isRunning == 1) { return}
-   v target = event.target;
+   var target = event.target;
    if (target.classList.contains("tab") & !target.children[0]) { 
    if (clicker == 1) {
    var rect = document.createElement('div');
